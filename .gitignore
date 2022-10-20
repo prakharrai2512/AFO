@@ -1,0 +1,7 @@
+*.png
+*.bmp
+*.torch
+*.zip
+submission.txt
+__pycache__
+.ipynb_checkpoints 
