@@ -43,6 +43,15 @@ sub:
 	python ../reference/submission.py -s ./submission/y -d ./ -nu 255
 	zip subby.zip submission.txt 
 
+cleanset2.1:
+	rm -rf ./dataset2.1/images
+	rm -rf ./dataset2.1/ground_truths
+	rm -rf ./dataset2.1/test
+	mkdir ./dataset2.1/images
+	mkdir ./dataset2.1/ground_truths
+	mkdir ./dataset2.1/test
+
+
 cleanset3:
 	rm -rf ./dataset3/images
 	rm -rf ./dataset3/ground_truths
