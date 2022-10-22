@@ -1,3 +1,5 @@
 1) Try normal cloning simple cloning
 2) Segment nuclei and change hue seperately
 3) Barlow Twins resnet 50
+4) Barlow Twins full train with extra loss
+5) Resnet with ( inputs)
