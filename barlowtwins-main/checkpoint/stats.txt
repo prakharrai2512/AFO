@@ -1,0 +1,6 @@
+main.py ../bt
+{"epoch": 0, "step": 0, "lr_weights": 0.0, "lr_biases": 0.0, "loss": 10687.4111328125, "time": 8}
+{"epoch": 1, "step": 1, "lr_weights": 0.0103125, "lr_biases": 0.00024749999999999994, "loss": 10740.228515625, "time": 15}
+{"epoch": 2, "step": 2, "lr_weights": 0.020625, "lr_biases": 0.0004949999999999999, "loss": 10359.2470703125, "time": 24}
+{"epoch": 3, "step": 3, "lr_weights": 0.030937500000000003, "lr_biases": 0.0007425, "loss": 10899.8447265625, "time": 49}
+main.py ../bt
