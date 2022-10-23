@@ -6,3 +6,4 @@ submission.txt
 __pycache__
 .ipynb_checkpoints 
 *.pt
+./barlow-main/checkpoint
