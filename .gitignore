@@ -6,5 +6,6 @@ submission.txt
 __pycache__
 .ipynb_checkpoints 
 *.pt
-barlowtwins-main/checkpoint/checkpoint.pth
+*.pth
+barlowtwins-main/checkpoint/resnet50.pth
 barlowtwins-main/checkpoint/stats.txt

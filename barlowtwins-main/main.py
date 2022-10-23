@@ -28,9 +28,9 @@ parser.add_argument('--workers', default=12, type=int, metavar='N',
                     help='number of data loader workers')
 parser.add_argument('--epochs', default=1000, type=int, metavar='N',
                     help='number of total epochs to run')
-parser.add_argument('--batch-size', default=132, type=int, metavar='N',
+parser.add_argument('--batch-size', default=12, type=int, metavar='N',
                     help='mini-batch size')
-parser.add_argument('--learning-rate-weights', default=0.2, type=float, metavar='LR',
+parser.add_argument('--learning-rate-weights', default=2, type=float, metavar='LR',
                     help='base learning rate for weights')
 parser.add_argument('--learning-rate-biases', default=0.0048, type=float, metavar='LR',
                     help='base learning rate for biases and batch norm parameters')
@@ -105,6 +105,7 @@ def main_worker(gpu, args):
         ckpt = torch.load(args.checkpoint_dir / 'checkpoint.pth',
                           map_location='cpu')
         start_epoch = ckpt['epoch']
+        start_epoch = 0
         model.load_state_dict(ckpt['model'])
         optimizer.load_state_dict(ckpt['optimizer'])
     else:
