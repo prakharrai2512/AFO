@@ -9,3 +9,4 @@ __pycache__
 *.pth
 barlowtwins-main/checkpoint/resnet50.pth
 barlowtwins-main/checkpoint/stats.txt
+*.json

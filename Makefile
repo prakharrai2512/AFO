@@ -68,3 +68,18 @@ cleanset4:
 	mkdir ./dataset4/ground_truths
 	mkdir ./dataset4/test
 
+cleanset11:
+	rm -rf ./dataset11/images
+	rm -rf ./dataset11/ground_truths
+	rm -rf ./dataset11/test
+	mkdir ./dataset11/images
+	mkdir ./dataset11/ground_truths
+	mkdir ./dataset11/test
+
+cleanset12:
+	rm -rf ./dataset12/images
+	rm -rf ./dataset12/ground_truths
+	rm -rf ./dataset12/test
+	mkdir ./dataset12/images
+	mkdir ./dataset12/ground_truths
+	mkdir ./dataset12/test
