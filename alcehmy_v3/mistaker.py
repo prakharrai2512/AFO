@@ -223,7 +223,8 @@ def evalm(model,fintestloader):
             continue
         #print(type(images[0]))
         #print(type(images[0]))
-        im_writer  = cv2.cvtColor(np.array(images[0].cpu(),dtype=np.float32).transpose(1,2,0),cv2.COLOR_LAB2BGR)
+        im_writer  = cv2.cvtColor(np.array(images[0].cpu().numpy().transpose(1,2,0)*255,dtype=np.uint8),cv2.COLOR_LAB2BGR)
+        print(im_writer)
         print(im_writer.shape)
         cv2.imwrite("../comps/"+str(i)+"_img.png",im_writer)
         images = list(image.to(device) for image in images)
@@ -246,5 +247,5 @@ def evalm(model,fintestloader):
 
 model = alchemy()
 model.to(device)
-model.load_state_dict(torch.load("alchemy_0_0.9161_d12.torch"))
+model.load_state_dict(torch.load("./alchemy_0_0.9294_d12.torch"))
 evalm(model,fintestloader)

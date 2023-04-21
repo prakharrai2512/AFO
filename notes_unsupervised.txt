@@ -1,0 +1,2 @@
+1.) Unsupervised baseline training with moco however add cell to one of the contrasted images
+2.) Take unlabbelled image get nucleus semantic segmentation using K-means (or some other simple method), add a nucleus semantic segmn branch 
